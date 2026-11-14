@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>海星双摄 隐私政策</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1c1c1e;
+      --muted: #6e6e73;
+      --line: #e5e5ea;
+      --accent: #0071e3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 28px 22px;
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+    .meta { color: var(--muted); font-size: 14px; }
+    article {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 8px 28px 32px;
+      border: 1px solid var(--line);
+    }
+    h2 {
+      font-size: 20px;
+      margin: 28px 0 10px;
+      padding-top: 8px;
+    }
+    p, li { font-size: 16px; }
+    ul { padding-left: 1.25em; }
+    li { margin: 0.35em 0; }
+    .note {
+      background: #fff6e5;
+      border: 1px solid #f0d9a8;
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: #6a4b00;
+      font-size: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f2f2f7; }
+    a { color: var(--accent); }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>海星双摄 隐私政策</h1>
+      <p class="meta">
+        应用名称：海星双摄（DualCamRecord）<br>
+        应用包名：com.honson.dualcamrecord<br>
+        运营者：个人开发者 honson（应用 vendor 字段为 Honson）<br>
+        生效日期：2026年11月14日
+      </p>
+    </header>
+    <article>
+      <p>欢迎使用「海星双摄」（以下简称「本应用」）。本政策说明本应用如何收集、使用和存储与您有关的信息。请在使用前认真阅读。当本应用提供应用内隐私政策入口或首次启动弹窗后，您点击同意即表示理解并接受本政策；若您不同意，请不要继续使用，并可卸载本应用。</p>
+
+      <h2>一、我们是谁</h2>
+      <p>本应用由个人开发者 <strong>honson</strong> 开发并运营，不是企业主体，亦无单独注册的公司名称。开发者所在地为中国广东省珠海市（不提供更具体的街道地址）。本应用是个人工具，免费提供，不含广告，也不提供应用内购买或账号服务。</p>
+
+      <h2>二、政策适用范围</h2>
+      <p>本政策适用于包名为 <code>com.honson.dualcamrecord</code> 的 HarmonyOS 应用「海星双摄」。本应用的核心功能（前后摄像头预览、录像、本地合成、保存到系统图库）均在设备本地完成，无需联网即可使用。</p>
+
+      <h2>三、我们收集和使用的信息</h2>
+      <p>本应用<strong>不注册账号</strong>，<strong>不要求您提供姓名、手机号、邮箱或身份证件</strong>，<strong>不向开发者服务器上传数据</strong>（本应用当前未设立用于收集个人信息的服务器）。</p>
+      <p>为实现拍摄和录像功能，本应用会在设备本地处理下列信息：</p>
+      <table>
+        <thead>
+          <tr><th>信息/能力</th><th>目的</th><th>处理方式</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>摄像头画面</td>
+            <td>前后摄像头预览、录像、录像中拍照、点按对焦与曝光调节等拍摄功能</td>
+            <td>仅在本机处理。录像或照片可按您的操作保存到本机沙箱，并写入系统图库。不上传。</td>
+          </tr>
+          <tr>
+            <td>麦克风声音</td>
+            <td>为录像录制现场声音（后置一路带音轨）</td>
+            <td>写入本地视频文件，不上传、不用于语音识别或声纹。</td>
+          </tr>
+          <tr>
+            <td>照片与视频文件</td>
+            <td>保存您拍摄或合成的内容，便于在系统图库中查看</td>
+            <td>先写入应用沙箱，再通过系统相册接口发布到系统图库。文件留在您的设备上，由系统图库管理。</td>
+          </tr>
+          <tr>
+            <td>重力传感器数据</td>
+            <td>在您开启水平仪时，计算设备倾斜并显示参考线</td>
+            <td>仅实时用于界面显示，不保存、不上传。</td>
+          </tr>
+          <tr>
+            <td>震动器</td>
+            <td>在合成完成等操作时给予轻微震动反馈</td>
+            <td>不涉及个人信息。</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>本应用不收集位置信息、通讯录、通话记录、日历、短信、剪贴板内容，也不将上述拍摄内容用于广告或用户画像。</p>
+
+      <h2>四、系统权限及用途</h2>
+      <p>本应用在安装包中申请的权限如下。其中相机和麦克风会在使用相关功能时向您申请，您可以拒绝；拒绝后将无法进行预览或带声音的录像。</p>
+      <table>
+        <thead>
+          <tr><th>权限</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>相机（ohos.permission.CAMERA）</td>
+            <td>同时开启前后摄像头进行预览与录像，以及拍照、对焦、曝光、变焦等拍摄控制</td>
+          </tr>
+          <tr>
+            <td>麦克风（ohos.permission.MICROPHONE）</td>
+            <td>录制视频中的声音</td>
+          </tr>
+          <tr>
+            <td>震动（ohos.permission.VIBRATE）</td>
+            <td>合成完成等操作的轻微震动反馈</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>保存到系统图库时，本应用使用系统提供的媒体资源创建接口，不额外申请图库读写权限，也不会遍历或读取您相册中的其他照片、视频（打开系统图库查看成品时，由系统图库应用自行展示）。</p>
+      <p>您可在系统设置中随时关闭相机、麦克风等权限。关闭后，对应功能将不可用。</p>
+
+      <h2>五、存储位置与保留期限</h2>
+      <p>拍摄过程中的临时文件存放在本应用沙箱目录；您确认保存的视频和照片会写入系统图库，由您的设备系统保管。开发者无法远程查看、下载或删除这些文件。</p>
+      <p>如需删除：请在系统图库中自行删除相应照片或视频；如需清除应用沙箱中的临时文件，可在系统设置中清除本应用数据，或直接卸载本应用。</p>
+
+      <h2>六、网络使用说明</h2>
+      <p>当前版本未申请网络权限，源码中也未调用公共互联网接口，核心功能可在完全无网络环境下使用。若您是通过华为应用市场或开发者托管的网页打开本《隐私政策》，则打开本页面本身可能使用网络，这仅用于阅读政策，不会因此上传您的拍摄内容。</p>
+
+      <h2>七、第三方 SDK 与共享</h2>
+      <p>本应用集成了以下仅在设备本地运行的组件，用于把两路录像合成为一条视频。它们的模块清单中未声明网络权限，本应用也不会通过它们向第三方传输您的个人信息：</p>
+      <ul>
+        <li>@ohos/ffmpeg-kit（版本 1.0.1）：本地音视频处理</li>
+        <li>@ohos/aki（版本 1.2.26）：本地原生接口调用</li>
+        <li>libdualcam_compose.so（本应用自带原生库）：在本机执行合成</li>
+      </ul>
+      <p>本应用<strong>不出售</strong>、不出租、不向第三方提供您的个人信息。因本应用不上传数据，开发者也无法将拍摄内容提供给第三方。如未来法律要求披露，将在法律允许的范围内进行，并在政策中更新说明。</p>
+
+      <h2>八、未成年人保护</h2>
+      <p>本应用是通用拍摄工具，不面向不满 14 周岁的未成年人专门提供服务，也不主动收集未成年人的个人信息。如您是未成年人，请在监护人同意和指导下使用。如监护人认为未成年人误用了本应用，可通过下方联系方式与我们联系，我们将协助说明如何在设备上删除相关内容或卸载应用。</p>
+
+      <h2>九、政策变更</h2>
+      <p>如本政策有更新，我们将在本页面公布并修改生效日期。若更新导致处理目的、方式或范围发生实质性变化，我们将通过应用内提示或其他合理方式告知。请以本页面最新版本为准。</p>
+
+      <h2>十、如何联系我们 / 行使权利</h2>
+      <p>您对本政策或个人信息处理有疑问、意见，或需要我们协助说明如何删除本机内容，请通过电子邮件联系：</p>
+      <p><strong><a href="mailto:623730293@qq.com">623730293@qq.com</a></strong></p>
+      <p>开发者：个人 honson<br>通常我们将在核实后的 15 个工作日内回复。因本应用不保存可远程访问的用户数据，删除拍摄内容需由您在本机系统图库或卸载应用完成。</p>
+    </article>
+    <footer>© 2026 honson · 海星双摄隐私政策</footer>
+  </div>
+</body>
+</html>
